@@ -1,0 +1,233 @@
+:root {
+    --c-red: #e31b21;
+    --c-red-2: #e8464a;
+    --c-red-3: #e5383c;
+    --c-red-4: #ff0d0d;
+    --c-main: #000;
+    --c-text: #292929;
+    --c-gray: #b5b5b5;
+    --c-gray-2: #797979;
+    --c-gray-3: #dadada;
+    --c-gray-4: #cacaca;
+    --c-gray-5: #171717;
+    --c-gray-6: #232323;
+    --c-white: #fff;
+    --c-white-2: #f6f6f6;
+    --c-blue: #154A7C;
+
+    --c-orange: #FE905A;
+    --c-yellow: #E7B504;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@font-face {
+    font-family: 'UTM Helve';
+    src: url('../fonts/UTM Helve.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM Helve';
+    src: url('../fonts/UTM Helve_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'UTM Helve';
+    src: url('../fonts/UTM HelveBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM Helve';
+    src: url('../fonts/UTM HelveBold_Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 16px;
+    color: var(--c-text);
+    background-color: var(--c-white);
+    font-family: 'UTM Helve', sans-serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-c {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @media (max-width: 1000.98px) {
+        padding: 0 16px;
+    }
+}
+
+.container-c2 {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    @media (max-width: 1500.98px) {
+        padding: 0 16px;
+    }
+}
+
+.title-base {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.white-space {
+    white-space: pre-line;
+}
+
+.img {
+    overflow: hidden;
+
+    img {
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.animation_box {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 3s ease;
+}
+
+.box-title {
+    .box-title__icon {
+        width: 56px;
+        height: auto;
+        margin-bottom: 24px;
+    }
+    .box-title__title {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .box-title__subtitle {
+        font-size: 35px;
+        font-weight: bold;
+        color: var(--c-red);
+        margin-bottom: 30px;
+    }
+    .box-title__desc {
+        font-size: 20px;
+        line-height: 35px;
+        white-space: pre-line;
+    }
+
+    @media (max-width: 1540.98px) {
+        .box-title__desc {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    @media (max-width: 800.98px) {
+        text-align: center;
+    }
+}
+
+.list-custom {
+    .item {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        align-items: flex-start;
+        gap: 42px;
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+
+        .content {
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0;
+                line-height: 35px;
+            }
+            .desc {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 1540.98px) {
+        .item {
+            .content {
+                .title {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .desc {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+.base-btn {
+    @include center_flex;
+    width: 190px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--c-red-2);
+    font-size: 20px;
+    color: var(--c-white);
+    text-decoration: none;
+
+    @media (max-width: 1540.98px) {
+        font-size: 16px;
+    }
+}
