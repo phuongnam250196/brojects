@@ -406,4 +406,15 @@
       }
     }
   }
+  @media (max-width: 370.98px) {
+    .box-footer {
+      .box-footer__body {
+        .child {
+          .child-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

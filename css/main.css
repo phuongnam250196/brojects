@@ -2130,6 +2130,11 @@ p {
     gap: 12px;
   }
 }
+@media (max-width: 370.98px) {
+  #footer .box-footer .box-footer__body .child .child-img {
+    width: 100%;
+  }
+}
 
 #banner {
   width: 100%;
@@ -2219,7 +2224,7 @@ p {
     font-size: 60px;
   }
 }
-@media (max-width: 400.98px) {
+@media (max-width: 520.98px) {
   #banner .banner-img .banner-bg {
     height: 470px;
   }
@@ -2719,6 +2724,11 @@ p {
     width: 80%;
   }
 }
+@media (max-width: 400.98px) {
+  #confident .list .item .item-list {
+    width: 100%;
+  }
+}
 
 #mu {
   height: 620px;
@@ -2815,6 +2825,7 @@ p {
 #contact .contact-form .form-group label {
   display: block;
   line-height: 1;
+  margin-bottom: 2px;
 }
 #contact .contact-form .form-group input {
   border: unset;

@@ -113,7 +113,7 @@
     }
   }
 
-  @media (max-width: 400.98px) {
+  @media (max-width: 520.98px) {
     .banner-img {
       .banner-bg {
         height: 470px;
@@ -215,11 +215,12 @@
 
   @media (max-width: 800.98px) {
     margin-bottom: 60px;
+
     .title {
       font-size: 25px;
       margin-bottom: 40px;
     }
-  
+
     .list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -287,37 +288,38 @@
 
   @media (max-width: 800.98px) {
     margin-bottom: 60px;
+
     .box-title {
       text-align: center;
       margin-bottom: 40px;
-  
+
       .title {
         font-size: 25px;
         line-height: 30px;
       }
-  
+
       .desc {
         font-size: 14px;
         margin-bottom: 20px;
       }
     }
-  
+
     .program-content {
       .program-content__title {
         font-size: 20px;
       }
-  
+
       .program-content__list {
         padding-top: 20px;
         padding-bottom: 20px;
-  
+
         li {
           font-size: 20px;
           line-height: 37px;
           padding-left: 20px;
         }
       }
-  
+
       .program-content__desc {
         font-size: 20px;
         line-height: 34px;
@@ -426,41 +428,41 @@
       line-height: 34px;
       margin-bottom: 60px;
     }
-  
+
     .list {
       display: grid;
       grid-template-columns: 1fr;
       gap: 20px;
-  
+
       .item {
         gap: 40px 0;
-  
+
         &:nth-child(3) {
           grid-template-columns: 180px 1fr;
-  
+
           .item-content {
             order: 2;
             margin-left: inherit;
           }
-  
+
           .item-img {
             order: 1;
           }
         }
-  
+
         &:nth-child(4) {
           grid-template-columns: 180px 1fr;
-  
+
           .item-content {
             order: 2;
             margin-left: inherit;
           }
-  
+
           .item-img {
             order: 1;
           }
         }
-  
+
         .item-content {
           .item-content__title {
             font-size: 30px;
@@ -475,24 +477,26 @@
 
     .list {
       display: grid;
+
       .item {
         grid-template-columns: 1fr;
-  
+
         &:nth-child(3) {
           grid-template-columns: 1fr;
         }
-  
+
         &:nth-child(4) {
           grid-template-columns: 1fr;
         }
-        
+
         .item-img {
           text-align: center;
+
           img {
             width: 70%;
           }
         }
-  
+
         .item-content {
           .item-content__title {
             font-size: 24px;
@@ -543,18 +547,19 @@
 
     .box-title {
       margin-bottom: 40px;
-  
+
       .title {
         font-size: 25px;
       }
-  
+
       .sub-title {
         font-size: 25px;
       }
     }
-  
+
     .transaction-img {
       margin-bottom: 30px;
+
       img {
         width: 80%;
       }
@@ -613,36 +618,38 @@
 
   @media (max-width: 800.98px) {
     margin-bottom: 60px;
+
     .title {
       font-size: 25px;
       line-height: 26px;
       margin-bottom: 80px;
     }
-  
+
     .list {
       gap: 20px;
       width: 100%;
-  
+
       .item {
         height: 120px;
-  
+
         .item-icon {
           height: 60px;
           top: -30px;
         }
-  
+
         .item-title {
           font-size: 20px;
         }
       }
-    }  
+    }
   }
+
   @media (max-width: 400.98px) {
 
     .list {
       grid-template-columns: 1fr;
       gap: 60px;
-    }  
+    }
   }
 }
 
@@ -690,34 +697,46 @@
   @media (max-width: 800.98px) {
     margin-bottom: 60px;
 
-  .list {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    .list {
+      grid-template-columns: 1fr;
+      gap: 40px;
 
-    .item {
-      text-align: center;
-      .item-title {
-        font-size: 25px;
-      }
+      .item {
+        text-align: center;
 
-      .item-desc {
-        margin-bottom: 20px;
-      }
-
-      .item-list {
-        width: 390px;
-        margin: 0 auto;
-        li {
-          text-align: left;
-          font-size: 16px;
+        .item-title {
+          font-size: 25px;
         }
-      }
 
-      .item-img {
-        width: 80%;
+        .item-desc {
+          margin-bottom: 20px;
+        }
+
+        .item-list {
+          width: 390px;
+          margin: 0 auto;
+
+          li {
+            text-align: left;
+            font-size: 16px;
+          }
+        }
+
+        .item-img {
+          width: 80%;
+        }
       }
     }
   }
+
+  @media (max-width: 400.98px) {
+    .list {
+      .item {
+        .item-list {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -837,6 +856,7 @@
       label {
         display: block;
         line-height: 1;
+        margin-bottom: 2px;
       }
 
       input {
@@ -906,7 +926,7 @@
         margin: 36px 0 25px;
       }
     }
-  
+
     .contact-form {
       padding: 67px 63px;
     }
@@ -914,6 +934,7 @@
 
   @media (max-width: 400.98px) {
     margin-bottom: 80px;
+
     .contact-form {
       padding: 40px 20px;
     }
